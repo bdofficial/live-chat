@@ -53,11 +53,6 @@ window.onfocus = function () {
       
     const name = document.querySelector("#username")
     playnoises = Boolean(false);
-    if (name.value != '') {
-      const data = `<p><strong style='color: red'>SYSTEM | ${name.value}</strong> rejoined the room.</p>`;
-
-      connection.send(data);
-    }
 }
 
 connection.onclose = (event) => {
